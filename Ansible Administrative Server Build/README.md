@@ -23,7 +23,7 @@ ansible --version
 useradd ansadmin
 passwd ansadmin
 
-#provide sudo access (scroll to the bottom and add under "#includedir /etc/sudoers.d")
+#provide sudo access (scroll to "Allow root to run any commands anwhere" and add below)
 visudo
 "ansadmin ALL=(ALL) NOPASSWD: ALL"
 ```
