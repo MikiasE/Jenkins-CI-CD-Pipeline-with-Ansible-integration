@@ -1,4 +1,4 @@
-# Installation and Configuration of Ansible Administrative Server
+# Installation and Configuration of Ansible Master Server
 
 ## Prerequisites:
 ```
