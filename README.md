@@ -38,4 +38,4 @@ cat copyfile.yml
         src: /opt/playbooks/webapp/webapp.war #will copy from ansible server to tomcat server
         dest: /opt/apache-tomcat-8.5.35/webapps
 ```
-*copyfile.yml will be triggered through jenkins.
+*copyfile.yml will be triggered through jenkins.*
