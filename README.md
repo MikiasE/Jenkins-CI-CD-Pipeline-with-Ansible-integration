@@ -14,4 +14,4 @@ Configure Ansible Administrative Server and Host.
 
 Ansible Administrative (Master) Server Build is outlined [here](https://github.com/MikiasE/Jenkins-CI-CD-Pipeline-with-Ansible-integration/edit/master/Ansible%20Administrative%20Server%20Build/README.md).
 
-Ansible Host (Slave) Server Build is outlined [here](https://github.com/MikiasE/Jenkins-CI-CD-Pipeline-with-Ansible-integration/edit/master/Ansible%20Administrative%20Server%20Build/README.md).
+Ansible Host (Slave) Server Build is outlined [here](https://github.com/MikiasE/Jenkins-CI-CD-Pipeline-with-Ansible-integration/tree/master/Ansible%20Slave%20Server%20Build).
