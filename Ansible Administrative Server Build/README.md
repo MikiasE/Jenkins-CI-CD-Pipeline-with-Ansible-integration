@@ -13,7 +13,7 @@ yum update -y
 #add EPEL (Extra Packages for Enterprise Linux) to get ansible package
 yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -y
 
-yum install Ansible -y
+yum install ansible -y
 
 #check version
 ansible --version
