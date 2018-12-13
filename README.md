@@ -20,4 +20,22 @@ Ansible Host (Slave) Server Build is outlined [here](https://github.com/MikiasE/
 
 Install "publish over ssh" Jenkins plugin.
 
-### Create Jenkins playbook for copying jar/war file onto Tomcat web server.
+### Create Jenkins playbook
+```
+mkdir ~/opt/playbooks/
+mkdir ~/opt/playbooks/webapp/
+mkdir ~/opt/playbooks/webapp/target/
+cd /opt/playbooks/
+cat copyfile.yml
+
+#in copyfile.yml (added Tomcat IP to webserver host in /etc/ansible/hosts)
+---
+- hosts: web-servers
+  become: true
+  tasks:
+    - name: copy war to tomcat server
+      copy: 
+        src: /opt/playbooks/webapp/webapp.war #will copy from ansible server to tomcat server
+        dest: /opt/apache-tomcat-8.5.35/webapps
+```
+*copyfile.yml will be triggered through jenkins.
