@@ -12,6 +12,6 @@ Project walkthrough can be found here: http://www.mikiasemanuel.com/jenkins-ci-c
 
 Configure Ansible Administrative Server and Host.
 
-Ansible Administrative Server Build is outlined ["here"](https://github.com/MikiasE/Jenkins-CI-CD-Pipeline-with-Ansible-integration).
+Ansible Administrative Server Build is outlined [here](https://github.com/MikiasE/Jenkins-CI-CD-Pipeline-with-Ansible-integration).
 
 Ansible host is a simple RHEL install - no configuration needed*
