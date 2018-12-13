@@ -17,3 +17,5 @@ Ansible Administrative (Master) Server Build is outlined [here](https://github.c
 Ansible Host (Slave) Server Build is outlined [here](https://github.com/MikiasE/Jenkins-CI-CD-Pipeline-with-Ansible-integration/tree/master/Ansible%20Slave%20Server%20Build/README.md).
 
 Install "publish over ssh" Jenkins plugin.
+
+### Create Jenkins playbook for copying jar/war file onto Tomcat web server.
