@@ -1,0 +1,37 @@
+[INFO] ------------------------------------------------------------------------
+[JENKINS] Archiving /var/lib/jenkins/workspace/maven-test/webapp/pom.xml to com.example.maven-project/webapp/1.0-SNAPSHOT/webapp-1.0-SNAPSHOT.pom
+[JENKINS] Archiving /var/lib/jenkins/workspace/maven-test/webapp/target/webapp.war to com.example.maven-project/webapp/1.0-SNAPSHOT/webapp-1.0-SNAPSHOT.war
+[JENKINS] Archiving /var/lib/jenkins/workspace/maven-test/server/pom.xml to com.example.maven-project/server/1.0-SNAPSHOT/server-1.0-SNAPSHOT.pom
+[JENKINS] Archiving /var/lib/jenkins/workspace/maven-test/server/target/server.jar to com.example.maven-project/server/1.0-SNAPSHOT/server-1.0-SNAPSHOT.jar
+[JENKINS] Archiving /var/lib/jenkins/workspace/maven-test/pom.xml to com.example.maven-project/maven-project/1.0-SNAPSHOT/maven-project-1.0-SNAPSHOT.pom
+channel stopped
+SSH: Connecting from host [ip-172-31-30-99]
+SSH: Connecting with configuration [ansible_server] ...
+SSH: Disconnecting configuration [ansible_server] ...
+ERROR: Exception when publishing, exception message [Permission denied]
+Build step 'Send files or execute commands over SSH' changed build result to UNSTABLE
+SSH: Connecting from host [ip-172-31-30-99]
+SSH: Connecting with configuration [ansible_server] ...
+SSH: EXEC: STDOUT/STDERR from command [ansible-playbook /opt/playbooks/copyfile.yml] ...
+
+PLAY [web-servers] *************************************************************
+
+TASK [Gathering Facts] *********************************************************
+fatal: [172.31.89.200]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).\r\n", "unreachable": true}
+
+ok: [172.31.80.235]
+
+TASK [copy war to tomcat server] ***********************************************
+An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+fatal: [172.31.80.235]: FAILED! => {"changed": false, "msg": "Could not find or access '/opt/playbooks/webapp/webapp.war' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+
+PLAY RECAP *********************************************************************
+172.31.80.235              : ok=1    changed=0    unreachable=0    failed=1   
+172.31.89.200              : ok=0    changed=0    unreachable=1    failed=0   
+
+ [WARNING]: Could not create retry file '/opt/playbooks/copyfile.retry'.
+[Errno 13] Permission denied: u'/opt/playbooks/copyfile.retry'
+SSH: EXEC: completed after 2,002 ms
+SSH: Disconnecting configuration [ansible_server] ...
+ERROR: Exception when publishing, exception message [Exec exit status not zero. Status [4]]
+Finished: UNSTABLE
