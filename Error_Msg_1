@@ -1,0 +1,21 @@
+[INFO] ------------------------------------------------------------------------
+[JENKINS] Archiving /var/lib/jenkins/workspace/maven-test/webapp/pom.xml to com.example.maven-project/webapp/1.0-SNAPSHOT/webapp-1.0-SNAPSHOT.pom
+[JENKINS] Archiving /var/lib/jenkins/workspace/maven-test/webapp/target/webapp.war to com.example.maven-project/webapp/1.0-SNAPSHOT/webapp-1.0-SNAPSHOT.war
+[JENKINS] Archiving /var/lib/jenkins/workspace/maven-test/server/pom.xml to com.example.maven-project/server/1.0-SNAPSHOT/server-1.0-SNAPSHOT.pom
+[JENKINS] Archiving /var/lib/jenkins/workspace/maven-test/server/target/server.jar to com.example.maven-project/server/1.0-SNAPSHOT/server-1.0-SNAPSHOT.jar
+[JENKINS] Archiving /var/lib/jenkins/workspace/maven-test/pom.xml to com.example.maven-project/maven-project/1.0-SNAPSHOT/maven-project-1.0-SNAPSHOT.pom
+channel stopped
+SSH: Connecting from host [ip-172-31-30-99]
+SSH: Connecting with configuration [ansible_server] ...
+
+SSH: Disconnecting configuration [ansible_server] ...
+ERROR: Exception when publishing, exception message [Could not create or change to directory. Directory []]
+Build step 'Send files or execute commands over SSH' changed build result to UNSTABLE
+SSH: Connecting from host [ip-172-31-30-99]
+SSH: Connecting with configuration [ansible_server] ...
+SSH: EXEC: STDOUT/STDERR from command [ansible-playbook /opt/playbooks/copyfile.yml] ...
+ERROR! the playbook: /opt/playbooks/copyfile.yml could not be found
+SSH: EXEC: completed after 400 ms
+SSH: Disconnecting configuration [ansible_server] ...
+ERROR: Exception when publishing, exception message [Exec exit status not zero. Status [1]]
+Finished: UNSTABLE
